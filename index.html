@@ -23,22 +23,24 @@
         rel="stylesheet">
 
     <style>
-        *{
+        * {
             margin: 0;
         }
-        .poppins{
+
+        .poppins {
             font-family: "Poppins", sans-serif;
             font-style: normal;
         }
     </style>
 </head>
 <!-- bg-[#f4f7ff] -->
-<body class="poppins bg-[#f4f7ff]" id="body">
+
+<body class="poppins bg-[#f4f7ff] px-36  max-w-[1536px]" id="body">
 
     <!-- header section -->
-    <header class="px-36 py-6">
+    <header class="py-6">
         <!-- navbar -->
-        <nav class="text-xl shadow bg-[#ffffff] flex items-center justify-between  border-0 rounded-2xl p-6">
+        <nav class="text-xl shadow bg-[#ffffff] flex items-center justify-between  border-0 rounded-2xl py-4 px-6">
             <div class="flex items-center gap-2">
                 <img src="./assets/logo.png" alt="">
                 <h1 class="text-xl">Dev<span class="font-extrabold">Board</span></h1>
@@ -48,7 +50,7 @@
                     <i class="fa-solid fa-square-check text-blue-500 bg-white"></i>
                     <span class="font-extrabold">23</span>
                 </div>
-                <div>
+                <div class="border-0">
                     <button class="cursor-pointer" id="colorBtn">
                         <img src="./assets/theme-btn.png" alt="">
                     </button>
@@ -56,6 +58,38 @@
             </div>
         </nav>
     </header>
+
+    <!-- main section -->
+    <section class="h-[918px] max-w-[1146px] my-4 p-6 bg-white rounded-2xl">
+        <div class="grid grid-cols-4 gap-6">
+            <div class="grid col-span-1 rounded-xl" style="background-color: #F4F7FF;">
+                <div class="flex items-center gap-5 p-5">
+                    <i class="fa-solid fa-square-check text-blue-500 bg-white rounded-full p-2 text-xl"></i>
+                    <div>
+                        <p>Task Assigned <br> <span class="font-bold text-xl">05</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid col-span-2 rounded-xl border-0" style="background: linear-gradient(130.70deg, rgba(55, 82, 253, 1),rgba(107.6, 127.04, 250.2, 1) 53%,rgba(154.99, 167.63, 247.68, 1) 100%);">
+                <div class="flex items-center gap-5 p-5">
+                    <div class="w-[79px]">
+                        <img src="./assets/board.png" alt="">
+                    </div>
+                    <div class="text-white font-normal text-xl">
+                        <p>Discover Something <br> New Today!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="grid col-span-1" style="background-color: #F4F7FF;">
+                <div class="flex items-center gap-5 p-5">
+                    <i class="fa-solid fa-calendar-days font-bold text-lg p-2 rounded-full bg-white"></i>
+                    <div>
+                        <p>Wed, <br> <span class="font-bold text-lg">Jul 28, 2025</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="script/index.js"></script>
 </body>
